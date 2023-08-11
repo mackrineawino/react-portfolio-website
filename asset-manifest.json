@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a348336.css",
+    "main.js": "/static/js/main.79809579.js",
+    "static/media/pizza.png": "/static/media/pizza.94a660c65af8325cc600.png",
+    "static/media/barber.png": "/static/media/barber.8568427597901a8ca454.png",
+    "static/media/university.png": "/static/media/university.77ab8dcc6c7b31330b50.png",
+    "static/media/clothes.png": "/static/media/clothes.3fbf825a7ecd1fd2bead.png",
+    "static/media/h1.png": "/static/media/h1.896407f60782aa7c86f8.png",
+    "static/media/hospital.png": "/static/media/hospital.2036f874d58d376c843a.png",
+    "static/media/en.jpg": "/static/media/en.b5ad667a5a18705a62e5.jpg",
+    "static/media/AWINO MACKRINE: RESUME.pdf": "/static/media/AWINO MACKRINE: RESUME.5b581c1b9e1f0cb16d3a.pdf",
+    "static/media/js.png": "/static/media/js.95aed371d5fad9fca683.png",
+    "static/media/laravel.png": "/static/media/laravel.98b7921c09c1e0d6a5b2.png",
+    "static/media/css.png": "/static/media/css.af64a88746d5512d7af5.png",
+    "static/media/react.png": "/static/media/react.f976927c0875f869b436.png",
+    "static/media/compiler.jpg": "/static/media/compiler.1762440bcdc988e05c75.jpg",
+    "static/media/docker.png": "/static/media/docker.9346e9da6267b37a3447.png",
+    "static/media/ip.jpg": "/static/media/ip.ec019215895aec3ba4de.jpg",
+    "static/media/type.jpg": "/static/media/type.232786e8b72e15593263.jpg",
+    "static/media/tailwind.png": "/static/media/tailwind.9296dfd8aa004f3f5c21.png",
+    "static/media/pg.png": "/static/media/pg.a84004873616f2da0d9b.png",
+    "static/media/html.png": "/static/media/html.5501672764dc5a6a1323.png",
+    "static/media/rails.png": "/static/media/rails.cb5c7e27f76789353485.png",
+    "static/media/php.png": "/static/media/php.9e632a45551b8501845d.png",
+    "static/media/graphql.png": "/static/media/graphql.88fde0e06f9e391e5ad6.png",
+    "index.html": "/index.html",
+    "main.7a348336.css.map": "/static/css/main.7a348336.css.map",
+    "main.79809579.js.map": "/static/js/main.79809579.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a348336.css",
+    "static/js/main.79809579.js"
+  ]
+}
