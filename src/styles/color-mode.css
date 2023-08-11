@@ -1,0 +1,16 @@
+.light-mode {
+    background-color: var(--primary-dark-900);
+   
+  }
+  
+  /* For dark mode */
+  .dark-mode {
+    background-color: var(--bg-color);
+   
+  }
+  .nav-dark{
+    background-color: var(--bg-color-1);
+  }
+  .nav-light{
+    background-color: var(--primary-dark-100);
+  }
