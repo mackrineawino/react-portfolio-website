@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import {
   AiOutlineGithub,
@@ -7,50 +7,8 @@ import {
 } from "react-icons/ai";
 
 
-const Contacts = ({ activeColor, isNightMode }) => {
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    try {
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      if (response.ok) {
-        alert('Email sent successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-      } else {
-        alert('Failed to send email. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('An error occurred while sending the email.');
-    }
-  };
-  
-  
+const Contacts = ({ activeColor, isNightMode }) => {
   return (
     <div>
       <section className={`${isNightMode ? 'bg-[var(--bg-color)]' : 'bg-[var(--primary-dark-900)]'} min-h-screen ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} pl-[15px] md:pl-[300px] pr-[15px]`}>
@@ -108,44 +66,32 @@ const Contacts = ({ activeColor, isNightMode }) => {
               Get in touch
             </div>
             <div className="flex justify-center items-center h-screen">
-            <form className="text-center" onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                className="border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%] md:flex-shrink-0 md:flex-grow-0 md:w-[40%] md:max-w-[40%]"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%] md:ml-5 md:flex-shrink-0 md:flex-grow-0 md:w-[38%] md:max-w-[38%]"
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%]"
-              />
-              <textarea
-                cols="30"
-                rows="10"
-                name="message"
-                placeholder="Type the message here"
-                value={formData.message}
-                onChange={handleChange}
-                className="border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[50px] pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%]"
-              ></textarea>
-              <button type="submit" className="block mx-auto border-none text-[16px] font-[500] py-[12px] px-[35px] text-white rounded-[10px] bg-[var(--skin-color)] whitespace-nowrap hover:transition-all hover:scale-105">
-                Submit
-              </button>
-            </form>
+              <form className="text-center">
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  className=" border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%] md:flex-shrink-0 md:flex-grow-0 md:w-[40%] md:max-w-[40%]"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter Your Email"
+                  className=" border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)]  rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%] md:ml-5 md:flex-shrink-0 md:flex-grow-0 md:w-[38%] md:max-w-[38%]"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className=" border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[15px] py-3 pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%]"
+                />
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Type the message here"
+                  className=" border-[1px] border-[var(--primary-dark-50)] text-[16px] text-[var(--text-black-700)] rounded-[10px] mb-[50px] pl-[15px] flex-shrink-0 flex-grow-0 w-[80%] max-w-[80%]"
+                ></textarea>
+                <button className="block mx-auto border-none text-[16px] font-[500] py-[12px] px-[35px] text-[white] rounded-[10px] bg-[var(--skin-color)] whitespace-nowrap hover:transition-all hover:scale-105">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
