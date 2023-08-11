@@ -13,7 +13,7 @@ const softwarePortfolio = [
   {
     id: 1,
     src: Pizza,
-    link: "http://localhost:3001/",
+    link: "https://mackrineawino.github.io/pizza_place_react",
     code: "https://github.com/mackrineawino/PizzaPlace-react",
   },
   {
