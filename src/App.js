@@ -27,8 +27,9 @@ function App() {
   };
 
   return (
-    <Router>
+    
     <div className="App">
+      <Router>
       <Nav isNightMode={isNightMode} activeColor={activeColor}/>
        <SlidingNav isNightMode={isNightMode} activeColor={activeColor}/> 
       <ColorsToggler
@@ -62,9 +63,9 @@ function App() {
             }
           />
         </Routes>
-     
+        </Router>
     </div>
-    </Router>
+    
   );
 }
 
