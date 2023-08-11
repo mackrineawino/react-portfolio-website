@@ -27,9 +27,9 @@ function App() {
   };
 
   return (
-    
+    <Router basename="/react_portfolio_website" >
     <div className="App">
-      <Router>
+     
       <Nav isNightMode={isNightMode} activeColor={activeColor}/>
        <SlidingNav isNightMode={isNightMode} activeColor={activeColor}/> 
       <ColorsToggler
@@ -63,8 +63,9 @@ function App() {
             }
           />
         </Routes>
-        </Router>
+        
     </div>
+    </Router>
     
   );
 }
