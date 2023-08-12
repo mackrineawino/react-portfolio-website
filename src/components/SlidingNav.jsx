@@ -19,7 +19,7 @@ const SlidingNav = ({ activeColor, isNightMode }) => {
     <div>
       {/* Toggle Button */}
       <div
-  className={`h-[60px] w-[65px] border-[1px] border-[var(--primary-dark-50)] cursor-pointer fixed right-[270px] top-[37px] rounded-[5px] bg-[var(--primary-dark-100)] flex items-center justify-center md:hidden`}
+  className={`h-[60px] w-[65px] border-[1px] border-[var(--primary-dark-50)] cursor-pointer fixed sm:left-[350px] left-[20px] top-[37px] rounded-[5px] bg-[var(--primary-dark-100)] flex items-center justify-center md:hidden`}
   onClick={toggleNav}
 >
   <AiOutlineMenu size={40} className="text-[var(--skin-color)]" />
@@ -28,7 +28,7 @@ const SlidingNav = ({ activeColor, isNightMode }) => {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed top-0 right-${isNavOpen ? "0" : "full"} h-screen w-[75%] bg-[var(--skin-color)] z-50 md:hidden transition-transform duration-300 ease-in-out`}
+        className={`fixed top-0 right-${isNavOpen ? "0" : "full"} h-screen w-[100%] bg-[var(--skin-color)] z-50 md:hidden transition-transform duration-300 ease-in-out`}
       >
         {/* Close Button */}
         {isNavOpen && (
@@ -40,7 +40,7 @@ const SlidingNav = ({ activeColor, isNightMode }) => {
           </div>
         )}
 
-        <ul className="h-full flex flex-col justify-center items-left pl-[200px] mt-[50px]">
+        <ul className="h-full flex flex-col justify-center items-left  pl-[50px] sm:pl-[200px] mt-[50px]">
           <li className="mb-[20px]">
             <Link
               className={` border-b-[1px] flex text-[20px] font-[600]  ${

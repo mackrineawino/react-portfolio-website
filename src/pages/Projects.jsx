@@ -71,25 +71,25 @@ const techWritingPortfolio = [
 const Projects = ({ activeColor, isNightMode }) => {
   return (
     <div>
-      <section className={`${isNightMode ? 'bg-[var(--bg-color)]' : 'bg-[var(--primary-dark-900)]'} min-h-screen ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} pl-[15px] md:pl-[300px] pr-[15px]`}>
+      <section className={`${isNightMode ? 'bg-[var(--bg-color)]' : 'bg-[var(--primary-dark-900)]'} min-h-screen ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} pl-[15px] md:pl-[300px] md:pr-[35px] pr-[15px]`}>
         <div className="opacity-[1] pt-[30px] pb-[20px] max-w-[1000px] w-full mx-auto">
-          <div className="mb-[60px] flex flex-shrink-0 flex-grow-0 w-[100%] max-w-full">
+          <div className="mb-[60px] hidden sm:flex sm:flex-shrink-0 sm:flex-grow-0 w-[100%] sm:max-w-full">
             <h2 className="font-[700] text-[40px] relative before:h-[4px] before:w-[50px] before:bg-[var(--skin-color)] before:absolute before:top-[100%] before:left-0 after:h-[4px] after:w-[25px] after:bg-[var(--skin-color)] after:absolute after:top-[100%] after:left-0 after:mt-[8px]">
               Portfolio
             </h2>
           </div>
-          <div>
+          <div className="mt-[150px] sm:mt-[60px]">
             <h2 className={`text-[24px] mb-[15px] font-[900] ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'}`}>
               Previous software Projects:
             </h2>
           </div>
-          <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-9 ">
+          <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 pr-[15px]">
             {softwarePortfolio.map(({ id, src, link, code }) => (
               <div key={id} className="shadow-md shadow-gray-100 rounded-lg">
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md duration-200 hover:scale-105"
+                  className=" mx-auto rounded-md duration-200 hover:scale-105"
                 />
                 <div className="flex items-center justify-center ">
                   <a

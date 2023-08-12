@@ -13,12 +13,12 @@ const Contacts = ({ activeColor, isNightMode }) => {
     <div>
       <section className={`${isNightMode ? 'bg-[var(--bg-color)]' : 'bg-[var(--primary-dark-900)]'} min-h-screen ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} pl-[15px] md:pl-[300px] pr-[15px]`}>
         <div className="pt-[30px] pb-[20px] max-w-[1000px] w-full mx-auto">
-          <div className="mb-[60px] flex flex-shrink-0 flex-grow-0 w-[100%] max-w-full">
+          <div className="mb-[60px] hidden sm:flex sm:flex-shrink-0 sm:flex-grow-0 w-[100%] sm:max-w-full">
             <h2 className="font-[700] text-[40px] relative before:h-[4px] before:w-[50px] before:bg-[var(--skin-color)] before:absolute before:top-[100%] before:left-0 after:h-[4px] after:w-[25px] after:bg-[var(--skin-color)] after:absolute after:top-[100%] after:left-0 after:mt-[8px]">
               Contact Me
             </h2>
           </div>
-          <div className="text-[25px] mb-[50px] text-center text-[var(--skin-color)]">
+          <div className="text-[25px] mb-[50px] text-center text-[var(--skin-color)] mt-[150px] sm:mt-[60px]">
             <h3>Have any Questions?</h3>
           </div>
 
