@@ -10,13 +10,13 @@ const Home = ({ activeColor, isNightMode }) => {
     <div>
       <section className={`${isNightMode ? 'bg-[var(--bg-color)]' : 'bg-[var(--primary-dark-900)]'} min-h-screen ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} pl-[15px] md:pl-[300px] pr-[15px]`}>
         <div className="pt-[30px] pb-[20px] max-w-[1000px] w-full ">
-        <div className=" flex flex-shrink-0 flex-grow-0 w-[100%] max-w-full">
+        <div className="hidden sm:flex sm:flex-shrink-0 sm:flex-grow-0 w-[100%] sm:max-w-full">
             <h2 className={`font-[700] text-[40px]  ${isNightMode ? 'text-white-dark-mode' : 'text-[var(--text-black-900)]'} relative before:h-[4px] before:w-[50px] before:bg-[var(--skin-color)] before:absolute before:top-[100%] before:left-0 after:h-[4px] after:w-[25px] after:bg-[var(--skin-color)] after:absolute after:top-[100%] after:left-0 after:mt-[8px]`}>
              Home
             </h2>
           </div>
           <div className="flex flex-col  text-center justify-center items-center lg:text-left 
-          lg:flex-row  mt-[60px]  ">
+          lg:flex-row mt-[150px] sm:mt-[60px]  ">
             {/* Left side navigation */}
             <div className="px-4 md:px-0 md:w-[60%]">
               <h3 className="text-[50px] md:text-[62px]">
